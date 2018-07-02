@@ -38,7 +38,7 @@ module Concerns
     def create(name)
       # the .tap method creates an object and returns it since we are passing
       # a variable called name we are naming that object from the passed variable
-      self.new.tap { |obj| obj.name = name}
+      self.new.tap { |obj| obj.name = name }
     end
   end
 
