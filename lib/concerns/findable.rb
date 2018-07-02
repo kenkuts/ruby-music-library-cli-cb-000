@@ -17,6 +17,7 @@ module Concerns
     end
 
     def save
+      # This is a setter method where it adds objects into the class variable
       # self.class - You are taking the specific class to which the module extends
       # class_variable_get() - is getting a specific variable inside of the class.
       # This function appends the instance object itself to the class variable which
@@ -26,6 +27,7 @@ module Concerns
 
   module ClassMethods
     def all
+      # This is a getter method.
       self.class_variable_get(:@@all)
     end
 
