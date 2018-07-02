@@ -17,9 +17,9 @@ module Concerns
     end
 
     def save
-      # self.class - You are taking the specific class
-      # 
-      self.class.class_variable_get(:@@all) << self 
+      # self.class - You are taking the specific class to which the module extends
+      #
+      self.class.class_variable_get(:@@all) << self
     end
   end
 
