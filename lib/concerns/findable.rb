@@ -36,8 +36,7 @@ module Concerns
     end
 
     def create(name)
-      new_obj = self.new(name)
-      new_obj
+      self.new.tap { |obj| obj.name = name}
     end
   end
 
