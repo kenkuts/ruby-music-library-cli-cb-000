@@ -9,7 +9,7 @@ class Genre
   attr_accessor :name, :songs
   @@all = []
 
-  def initialize(name)
+  def initialize(name="")
     super(name)
     @songs = []
   end
