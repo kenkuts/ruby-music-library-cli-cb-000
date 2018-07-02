@@ -11,7 +11,7 @@ class Song
 
   @@all = []
 
-  def initialize(name, artist=nil, genre=nil)
+  def initialize(name="", artist=nil, genre=nil)
     super(name)
     self.artist = artist
     self.genre = genre
